@@ -1,0 +1,16 @@
+exifutils - Utilities to organize and modify image files based on EXIF tag information.
+
+exifoffset.py
+	Modify an EXIF tag based upon a time offset.
+	Useful when you forget to set your camera's time to local time.
+
+exif2unixtime.py
+	Rename image files to UNIX timestamp format (%y%m%d%H%M%S)
+	Adds a unique identifier from 0-99 to the end of the filename in the event
+	  of multiple pictures taken in the same second.
+	Useful for merging pictures taken with multiple cameras.  Requires sane
+	  EXIF timestamps.  See exifoffset.py for help fixing.
+	
+
+
+
