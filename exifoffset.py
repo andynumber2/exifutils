@@ -31,12 +31,12 @@ if __name__ == '__main__':
 
     file = args[0]
 
-    print "Offset: %s days, %s hours, %s minutes, %s seconds" % 
+    print "Offset: %s days, %s hours, %s minutes, %s seconds" % \
            (day_offset, hour_offset, minute_offset, second_offset)
 
     # Now convert everything to seconds.  Mixing signs in the input 
     #   will do weird things.  Prob check for that later
-    offset = (day_offset * 24 * 60 * 60) + (hour_offset * 60 * 60) +
+    offset = (day_offset * 24 * 60 * 60) + (hour_offset * 60 * 60) + \
              (minute_offset * 60) + second_offset
 
     delta = datetime.timedelta(days=day_offset, hours=hour_offset, 
